@@ -1,4 +1,4 @@
-import 'dart:io';
+import 'dart:io' as io;
 
 import 'package:extended_image/extended_image.dart';
 import 'package:flutter/cupertino.dart';
@@ -15,7 +15,7 @@ class ChatPicturePreview extends StatelessWidget {
     this.onDownload,
   }) : super(key: key);
   final String? url;
-  final File? file;
+  final io.File? file;
   final String tag;
   final Future<bool> Function(String)? onDownload;
 
